@@ -1,0 +1,355 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform ease 0.2s;
+  transition: -webkit-transform ease 0.2s;
+  transition: transform ease 0.2s;
+  transition: transform ease 0.2s, -webkit-transform ease 0.2s;
+}
+a:hover {
+  -webkit-transform: rotateZ(-15deg) scale(1.1);
+          transform: rotateZ(-15deg) scale(1.1);
+}
+
+body {
+  color: #FFF;
+  font-size: 36px;
+  font-family: "Long Cang";
+}
+
+.cont {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #004AAD;
+  padding-top: 0;
+  padding-bottom: 44px;
+  overflow: hidden;
+  position: relative;
+}
+header #target {
+  -webkit-transition: -webkit-transform linear 0.2s;
+  transition: -webkit-transform linear 0.2s;
+  transition: transform linear 0.2s;
+  transition: transform linear 0.2s, -webkit-transform linear 0.2s;
+}
+header img {
+  position: absolute;
+}
+header img.yt-logo {
+  left: 144px;
+  bottom: calc(50% - 85px);
+}
+header img.ytuber {
+  right: 0;
+  bottom: 0;
+}
+header .menu-upst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .menu-upst .logo {
+  font-family: "Just Me Again Down Here";
+  font-size: 83px;
+}
+header .menu-upst nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  width: 683px;
+}
+header .menu-upst nav a {
+  font-family: "Just Me Again Down Here";
+  font-size: 40px;
+}
+header .menu-upst nav a:nth-child(4) {
+  display: none;
+}
+header .menu-upst nav a:last-child {
+  font-size: 32px;
+  width: 151px;
+  height: 77px;
+  padding-top: 9px;
+  background-color: #FF0000;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 14px;
+}
+header main {
+  padding-top: 128px;
+  text-align: center;
+  font-family: "Just Me Again Down Here";
+  position: relative;
+}
+header main div.fl > img {
+  display: none;
+}
+header main h1 {
+  font-size: 144px;
+  line-height: 0.81;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+header main p {
+  font-size: 76px;
+  line-height: 0.81;
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
+  margin-bottom: 23px;
+}
+header main .soc-btns {
+  width: 362px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header main .soc-btns .soc-btns__btn {
+  width: 61px;
+  height: 61px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header main .soc-btns .soc-btns__btn.tg {
+  background-image: url(/img/tg.png);
+}
+header main .soc-btns .soc-btns__btn.tw {
+  background-image: url(/img/tw.png);
+}
+header main .soc-btns .soc-btns__btn.uk {
+  background-image: url(/img/uk.png);
+}
+header .dwn-straight {
+  width: 602px;
+  height: 39px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3019607843);
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.about {
+  padding-top: 38px;
+  padding-bottom: 111px;
+  color: #000;
+}
+.about .cont__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about img {
+  margin-left: 88px;
+  margin-top: 71px;
+}
+.about main {
+  width: 841px;
+}
+.about main h2 {
+  font-family: "Just Me Again Down Here";
+  font-size: 83px;
+  text-align: center;
+}
+.about main p {
+  line-height: 100%;
+  text-align: center;
+}
+.about main p a {
+  color: #000;
+}
+
+.how-buy {
+  position: relative;
+  background-color: #004AAD;
+  padding-bottom: 54px;
+}
+.how-buy img {
+  position: absolute;
+  right: 0;
+  top: -26px;
+}
+.how-buy h2 {
+  font-family: "Just Me Again Down Here";
+  font-size: 99px;
+  text-transform: uppercase;
+}
+.how-buy main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  row-gap: 10px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.how-buy main .how-buy__ceil {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+.how-buy main .how-buy__ceil h3 {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  font-family: "Just Me Again Down Here";
+  font-size: 44px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.how-buy main .how-buy__ceil p {
+  font-size: 30px;
+  line-height: 100%;
+}
+
+.wall-meme {
+  padding-top: 24px;
+  padding-bottom: 79px;
+}
+.wall-meme main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: 78px;
+}
+.wall-meme main .wall-meme__meme:first-child {
+  width: inherit;
+  height: inherit;
+}
+
+footer {
+  background-color: #000;
+  padding-top: 56px;
+  padding-bottom: 92px;
+}
+footer p {
+  font-family: "Just Me Again Down Here";
+  font-size: 44px;
+  text-align: center;
+}

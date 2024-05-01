@@ -1,0 +1,311 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: transform ease 0.2s;
+
+    &:hover {
+        transform: rotateZ(-15deg) scale(1.1);
+    }
+}
+
+body {
+    color: #FFF;
+    font-size: 36px;
+    font-family: "Long Cang";
+}
+
+.cont {
+    width: 1300px;
+    margin: 0 auto;
+}
+header {
+    background-color: #004AAD;
+    padding-top: 0;
+    padding-bottom: 44px;
+    overflow: hidden;
+    position: relative;
+
+
+    #target {
+        transition: transform linear .2s;
+    }
+    img {
+        position: absolute;
+
+        &.yt-logo {
+            left: 144px;
+            bottom: calc(50% - 85px);
+        }
+        &.ytuber {
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .menu-upst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .logo {
+            font-family: "Just Me Again Down Here";
+            font-size: 83px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 50px;
+
+            width: 683px;
+
+            a{
+                font-family: "Just Me Again Down Here";
+                font-size: 40px;
+
+                &:nth-child(3) {
+
+                }
+                &:nth-child(4) {
+                    display: none;
+                }
+
+                &:last-child {
+                    font-size: 32px;
+                    width: 151px;
+                    height: 77px;
+                    padding-top: 9px;
+                    background-color: #FF0000;
+                    border-radius: 16px;
+                    text-align: center;
+                    margin-top: 14px;
+                }
+
+                
+            }
+        }
+    }
+    main {
+        padding-top: 128px;
+        text-align: center;
+        font-family: "Just Me Again Down Here";
+        position: relative;
+
+        
+        div.fl>img {
+            display: none;
+        }
+        h1 {
+            font-size: 144px;
+            line-height: 0.81;
+            margin-bottom: 2px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 76px;
+            line-height: 0.81;
+            transform: translateX(12px);
+            margin-bottom: 23px;
+        }
+        .soc-btns {
+            width: 362px;
+            margin: 0 auto;
+            margin-bottom: 24px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .soc-btns__btn {
+                width: 61px;
+                height: 61px;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+        
+                &.tg {
+                    background-image: url(/img/tg.png);
+                }
+                &.tw {
+                    background-image: url(/img/tw.png);
+                }
+                &.uk {
+                    background-image: url(/img/uk.png);
+                }
+            }
+        }
+    }
+    .dwn-straight {
+        width: 602px;
+        height: 39px;
+        margin: 0 auto;
+        border-radius: 8px;
+        background-color: #ffffff4d;
+    }
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.about {
+    padding-top: 38px;
+    padding-bottom: 111px;
+    color: #000;
+
+    .cont__about {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    img {
+        margin-left: 88px;
+        margin-top: 71px;
+    }
+    main{
+        width: 841px;
+
+        h2 {
+            font-family: "Just Me Again Down Here";
+            font-size: 83px;
+            text-align: center;
+        }
+        p {
+            line-height: 100%;
+            text-align: center;
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+.how-buy {
+    position: relative;
+    background-color: #004AAD;
+    padding-bottom: 54px;
+
+    img{
+        position: absolute;
+        right: 0;
+        top: -26px;
+    }
+    h2 {
+        font-family: "Just Me Again Down Here";
+        font-size: 99px;
+        text-transform: uppercase;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        row-gap: 10px;
+        column-gap: 20px;
+
+        .how-buy__ceil {
+            max-width: min-content;
+
+            h3 {
+                min-width: max-content;
+                font-family: "Just Me Again Down Here";
+                font-size: 44px;
+                margin-bottom: 14px;
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+            p {
+                font-size: 30px;
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+.wall-meme {
+    padding-top: 24px;
+    padding-bottom: 79px;
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        row-gap: 78px;
+    
+        .wall-meme__meme {
+
+            &:first-child {
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+    padding-top: 56px;
+    padding-bottom: 92px;
+    p {
+        font-family: "Just Me Again Down Here";
+        font-size: 44px;
+        text-align: center;
+    }
+}

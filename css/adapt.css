@@ -1,0 +1,128 @@
+@media (max-width: 1300px) {
+  .cont {
+    width: 95%;
+  }
+  header img {
+    display: none;
+  }
+  header main {
+    padding-top: 49px;
+  }
+  header main div.fl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
+  header main h1 {
+    font-size: 124px;
+  }
+  header main p {
+    font-size: 56px;
+    margin: 0;
+  }
+  header main div.fl > img {
+    display: block;
+    position: static;
+  }
+  header main div.fl > img:nth-child(1) {
+    width: 16%;
+  }
+  header main div.fl > img:nth-child(3) {
+    width: 18%;
+    border-radius: 28px;
+  }
+  .about .cont__about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about img {
+    margin: 0;
+    width: 35%;
+  }
+  .how-buy img {
+    width: 20%;
+    right: 0;
+  }
+}
+@media (max-width: 995px) {
+  header .menu-upst {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header main h1 {
+    font-size: 104px;
+  }
+  header main p {
+    font-size: 46px;
+  }
+}
+@media (max-width: 780px) {
+  header .dwn-straight {
+    width: 78%;
+  }
+  header .menu-upst nav {
+    width: 75%;
+    -webkit-column-gap: 65px;
+       -moz-column-gap: 65px;
+            column-gap: 65px;
+  }
+  header .menu-upst nav a:nth-child(3) {
+    display: none;
+  }
+  header .menu-upst nav a:nth-child(4) {
+    display: inline-block;
+  }
+  header main .soc-btns {
+    width: 50%;
+  }
+  header main .soc-btns .soc-btns__btn {
+    width: 54px;
+    height: 54px;
+  }
+  header main h1 {
+    font-size: 51px;
+  }
+  header main p {
+    font-size: 30px;
+  }
+  .about main h2 {
+    font-size: 60px;
+  }
+  .about main p {
+    font-size: 25px;
+  }
+  .how-buy h2 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .how-buy main {
+    row-gap: 27px;
+  }
+  .how-buy main .how-buy__ceil {
+    width: 90%;
+    max-width: none;
+  }
+  .how-buy main .how-buy__ceil h3 {
+    text-align: center;
+    font-size: 38px;
+  }
+  footer p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 780px) {
+  header .menu-upst nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
