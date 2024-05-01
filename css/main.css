@@ -207,13 +207,13 @@ header main .soc-btns .soc-btns__btn {
   background-position: center;
 }
 header main .soc-btns .soc-btns__btn.tg {
-  background-image: url(/img/tg.png);
+  background-image: url(../img/tg.png);
 }
 header main .soc-btns .soc-btns__btn.tw {
-  background-image: url(/img/tw.png);
+  background-image: url(../img/tw.png);
 }
 header main .soc-btns .soc-btns__btn.uk {
-  background-image: url(/img/uk.png);
+  background-image: url(../img/uk.png);
 }
 header .dwn-straight {
   width: 602px;
